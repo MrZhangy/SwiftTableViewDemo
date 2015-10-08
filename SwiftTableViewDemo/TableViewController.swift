@@ -11,6 +11,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    var items = ["类型别名","纯代码显示一个tableView","元组","可选(Options)","数组"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +20,8 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,28 +40,34 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 10
+        return self.items.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("TitleCell", forIndexPath: indexPath) as! UITableViewCell
 
-        if indexPath.row == 0 {
-            cell.textLabel?.text = "纯代码显示一个tableView"
-        }else {
-            //给textLabel 赋值
-            cell.textLabel?.text = "\(indexPath.row)"
-        }
+        cell.textLabel?.text = self.items[indexPath.row]
 
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.row == 0 {
+        if(indexPath.row == 0) {
+            self.navigationController?.pushViewController(TypeAliasesViewController(), animated: true)
+        }
+        else if indexPath.row == 1 {
 //             ManualCreateVC()
             self.navigationController?.pushViewController(ManualCreateVC(), animated:true)
+        }else if indexPath.row == 2 {
+            self.navigationController?.pushViewController(TuplesViewController(), animated: true)
         }
+        else if indexPath.row == 3 {
+            self.navigationController?.pushViewController(OptionalsViewController(), animated: true)
+        }else if indexPath.row == 4 {
+            self.navigationController?.pushViewController(ArrayViewController(), animated: true)
+        }
+        
     }
 
     /*

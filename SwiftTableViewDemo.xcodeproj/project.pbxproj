@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1846421B5D2AC50082391A /* TypeAliasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1846411B5D2AC50082391A /* TypeAliasesViewController.swift */; };
+		BA1846451B5D31BE0082391A /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1846441B5D31BE0082391A /* StringUtil.swift */; };
+		BA1846471B5D33590082391A /* ControlUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1846461B5D33590082391A /* ControlUtil.swift */; };
+		BA1846491B5D360D0082391A /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1846481B5D360D0082391A /* UILabelExtension.swift */; };
+		BA18464B1B5D37E80082391A /* TuplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA18464A1B5D37E80082391A /* TuplesViewController.swift */; };
+		BA18464D1B5D3C530082391A /* OptionalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA18464C1B5D3C530082391A /* OptionalsViewController.swift */; };
 		BAC5790A1B540BE400E4E5E1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC579091B540BE400E4E5E1 /* TableViewController.swift */; };
 		BAC5790C1B540F3100E4E5E1 /* ManualCreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5790B1B540F3100E4E5E1 /* ManualCreateVC.swift */; };
+		BAC7A78A1B5DD872001A1840 /* ArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A7891B5DD872001A1840 /* ArrayViewController.swift */; };
 		BACC06151B53B8520039B262 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC06141B53B8520039B262 /* AppDelegate.swift */; };
 		BACC061A1B53B8520039B262 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BACC06181B53B8520039B262 /* Main.storyboard */; };
 		BACC061C1B53B8520039B262 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACC061B1B53B8520039B262 /* Images.xcassets */; };
@@ -27,8 +34,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA1846411B5D2AC50082391A /* TypeAliasesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliasesViewController.swift; sourceTree = "<group>"; };
+		BA1846441B5D31BE0082391A /* StringUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtil.swift; sourceTree = "<group>"; };
+		BA1846461B5D33590082391A /* ControlUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlUtil.swift; sourceTree = "<group>"; };
+		BA1846481B5D360D0082391A /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		BA18464A1B5D37E80082391A /* TuplesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuplesViewController.swift; sourceTree = "<group>"; };
+		BA18464C1B5D3C530082391A /* OptionalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalsViewController.swift; sourceTree = "<group>"; };
 		BAC579091B540BE400E4E5E1 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		BAC5790B1B540F3100E4E5E1 /* ManualCreateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualCreateVC.swift; sourceTree = "<group>"; };
+		BAC7A7891B5DD872001A1840 /* ArrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayViewController.swift; sourceTree = "<group>"; };
 		BACC060F1B53B8520039B262 /* SwiftTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BACC06131B53B8520039B262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BACC06141B53B8520039B262 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +72,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA1846431B5D318F0082391A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BA1846441B5D31BE0082391A /* StringUtil.swift */,
+				BA1846461B5D33590082391A /* ControlUtil.swift */,
+				BA1846481B5D360D0082391A /* UILabelExtension.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		BACC06061B53B8520039B262 = {
 			isa = PBXGroup;
 			children = (
@@ -79,9 +103,14 @@
 		BACC06111B53B8520039B262 /* SwiftTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BA1846431B5D318F0082391A /* Util */,
 				BACC06141B53B8520039B262 /* AppDelegate.swift */,
 				BAC579091B540BE400E4E5E1 /* TableViewController.swift */,
+				BA18464A1B5D37E80082391A /* TuplesViewController.swift */,
 				BAC5790B1B540F3100E4E5E1 /* ManualCreateVC.swift */,
+				BA1846411B5D2AC50082391A /* TypeAliasesViewController.swift */,
+				BA18464C1B5D3C530082391A /* OptionalsViewController.swift */,
+				BAC7A7891B5DD872001A1840 /* ArrayViewController.swift */,
 				BACC06181B53B8520039B262 /* Main.storyboard */,
 				BACC061B1B53B8520039B262 /* Images.xcassets */,
 				BACC061D1B53B8520039B262 /* LaunchScreen.xib */,
@@ -215,7 +244,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC7A78A1B5DD872001A1840 /* ArrayViewController.swift in Sources */,
 				BACC06151B53B8520039B262 /* AppDelegate.swift in Sources */,
+				BA18464B1B5D37E80082391A /* TuplesViewController.swift in Sources */,
+				BA1846421B5D2AC50082391A /* TypeAliasesViewController.swift in Sources */,
+				BA1846451B5D31BE0082391A /* StringUtil.swift in Sources */,
+				BA1846471B5D33590082391A /* ControlUtil.swift in Sources */,
+				BA18464D1B5D3C530082391A /* OptionalsViewController.swift in Sources */,
+				BA1846491B5D360D0082391A /* UILabelExtension.swift in Sources */,
 				BAC5790C1B540F3100E4E5E1 /* ManualCreateVC.swift in Sources */,
 				BAC5790A1B540BE400E4E5E1 /* TableViewController.swift in Sources */,
 			);
@@ -344,9 +380,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftTableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -354,6 +392,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftTableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
